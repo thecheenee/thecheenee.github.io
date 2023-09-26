@@ -1,0 +1,320 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+body {
+	font-size: 12px;
+}
+
+:root {
+	--retro-black: #000000;
+	--retro-maroon: #800000;
+	--retro-green: #008000;
+	--retro-olive: #808000;
+	--retro-navy: #000080;
+	--retro-purple: #800080;
+	--retro-teal: #008080;
+	--retro-silver: #c0c0c0;
+	--retro-grey: #808080;
+	--retro-red: #ff0000;
+	--retro-lime: #00ff00;
+	--retro-yellow: #ffff00;
+	--retro-blue: #0000ff;
+	--retro-fuchsia: #ff00ff;
+	--retro-aqua: #00ffff;
+	--retro-white: #ffffff;
+	--retro-grey0: #000000;
+	--retro-navyblue: #00005f;
+	--retro-darkblue: #000087;
+	--retro-blue3: #0000af;
+	--retro-blue3: #0000d7;
+	--retro-blue1: #0000ff;
+	--retro-darkgreen: #005f00;
+	--retro-deepskyblue4: #005f5f;
+	--retro-deepskyblue4: #005f87;
+	--retro-deepskyblue4: #005faf;
+	--retro-dodgerblue3: #005fd7;
+	--retro-dodgerblue2: #005fff;
+	--retro-green4: #008700;
+	--retro-springgreen4: #00875f;
+	--retro-turquoise4: #008787;
+	--retro-deepskyblue3: #0087af;
+	--retro-deepskyblue3: #0087d7;
+	--retro-dodgerblue1: #0087ff;
+	--retro-green3: #00af00;
+	--retro-springgreen3: #00af5f;
+	--retro-darkcyan: #00af87;
+	--retro-lightseagreen: #00afaf;
+	--retro-deepskyblue2: #00afd7;
+	--retro-deepskyblue1: #00afff;
+	--retro-green3: #00d700;
+	--retro-springgreen3: #00d75f;
+	--retro-springgreen2: #00d787;
+	--retro-cyan3: #00d7af;
+	--retro-darkturquoise: #00d7d7;
+	--retro-turquoise2: #00d7ff;
+	--retro-green1: #00ff00;
+	--retro-springgreen2: #00ff5f;
+	--retro-springgreen1: #00ff87;
+	--retro-mediumspringgreen: #00ffaf;
+	--retro-cyan2: #00ffd7;
+	--retro-cyan1: #00ffff;
+	--retro-darkred: #5f0000;
+	--retro-deeppink4: #5f005f;
+	--retro-purple4: #5f0087;
+	--retro-purple4: #5f00af;
+	--retro-purple3: #5f00d7;
+	--retro-blueviolet: #5f00ff;
+	--retro-orange4: #5f5f00;
+	--retro-grey37: #5f5f5f;
+	--retro-mediumpurple4: #5f5f87;
+	--retro-slateblue3: #5f5faf;
+	--retro-slateblue3: #5f5fd7;
+	--retro-royalblue1: #5f5fff;
+	--retro-chartreuse4: #5f8700;
+	--retro-darkseagreen4: #5f875f;
+	--retro-paleturquoise4: #5f8787;
+	--retro-steelblue: #5f87af;
+	--retro-steelblue3: #5f87d7;
+	--retro-cornflowerblue: #5f87ff;
+	--retro-chartreuse3: #5faf00;
+	--retro-darkseagreen4: #5faf5f;
+	--retro-cadetblue: #5faf87;
+	--retro-cadetblue: #5fafaf;
+	--retro-skyblue3: #5fafd7;
+	--retro-steelblue1: #5fafff;
+	--retro-chartreuse3: #5fd700;
+	--retro-palegreen3: #5fd75f;
+	--retro-seagreen3: #5fd787;
+	--retro-aquamarine3: #5fd7af;
+	--retro-mediumturquoise: #5fd7d7;
+	--retro-steelblue1: #5fd7ff;
+	--retro-chartreuse2: #5fff00;
+	--retro-seagreen2: #5fff5f;
+	--retro-seagreen1: #5fff87;
+	--retro-seagreen1: #5fffaf;
+	--retro-aquamarine1: #5fffd7;
+	--retro-darkslategray2: #5fffff;
+	--retro-darkred: #870000;
+	--retro-deeppink4: #87005f;
+	--retro-darkmagenta: #870087;
+	--retro-darkmagenta: #8700af;
+	--retro-darkviolet: #8700d7;
+	--retro-purple: #8700ff;
+	--retro-orange4: #875f00;
+	--retro-lightpink4: #875f5f;
+	--retro-plum4: #875f87;
+	--retro-mediumpurple3: #875faf;
+	--retro-mediumpurple3: #875fd7;
+	--retro-slateblue1: #875fff;
+	--retro-yellow4: #878700;
+	--retro-wheat4: #87875f;
+	--retro-grey53: #878787;
+	--retro-lightslategrey: #8787af;
+	--retro-mediumpurple: #8787d7;
+	--retro-lightslateblue: #8787ff;
+	--retro-yellow4: #87af00;
+	--retro-darkolivegreen3: #87af5f;
+	--retro-darkseagreen: #87af87;
+	--retro-lightskyblue3: #87afaf;
+	--retro-lightskyblue3: #87afd7;
+	--retro-skyblue2: #87afff;
+	--retro-chartreuse2: #87d700;
+	--retro-darkolivegreen3: #87d75f;
+	--retro-palegreen3: #87d787;
+	--retro-darkseagreen3: #87d7af;
+	--retro-darkslategray3: #87d7d7;
+	--retro-skyblue1: #87d7ff;
+	--retro-chartreuse1: #87ff00;
+	--retro-lightgreen: #87ff5f;
+	--retro-lightgreen: #87ff87;
+	--retro-palegreen1: #87ffaf;
+	--retro-aquamarine1: #87ffd7;
+	--retro-darkslategray1: #87ffff;
+	--retro-red3: #af0000;
+	--retro-deeppink4: #af005f;
+	--retro-mediumvioletred: #af0087;
+	--retro-magenta3: #af00af;
+	--retro-darkviolet: #af00d7;
+	--retro-purple: #af00ff;
+	--retro-darkorange3: #af5f00;
+	--retro-indianred: #af5f5f;
+	--retro-hotpink3: #af5f87;
+	--retro-mediumorchid3: #af5faf;
+	--retro-mediumorchid: #af5fd7;
+	--retro-mediumpurple2: #af5fff;
+	--retro-darkgoldenrod: #af8700;
+	--retro-lightsalmon3: #af875f;
+	--retro-rosybrown: #af8787;
+	--retro-grey63: #af87af;
+	--retro-mediumpurple2: #af87d7;
+	--retro-mediumpurple1: #af87ff;
+	--retro-gold3: #afaf00;
+	--retro-darkkhaki: #afaf5f;
+	--retro-navajowhite3: #afaf87;
+	--retro-grey69: #afafaf;
+	--retro-lightsteelblue3: #afafd7;
+	--retro-lightsteelblue: #afafff;
+	--retro-yellow3: #afd700;
+	--retro-darkolivegreen3: #afd75f;
+	--retro-darkseagreen3: #afd787;
+	--retro-darkseagreen2: #afd7af;
+	--retro-lightcyan3: #afd7d7;
+	--retro-lightskyblue1: #afd7ff;
+	--retro-greenyellow: #afff00;
+	--retro-darkolivegreen2: #afff5f;
+	--retro-palegreen1: #afff87;
+	--retro-darkseagreen2: #afffaf;
+	--retro-darkseagreen1: #afffd7;
+	--retro-paleturquoise1: #afffff;
+	--retro-red3: #d70000;
+	--retro-deeppink3: #d7005f;
+	--retro-deeppink3: #d70087;
+	--retro-magenta3: #d700af;
+	--retro-magenta3: #d700d7;
+	--retro-magenta2: #d700ff;
+	--retro-darkorange3: #d75f00;
+	--retro-indianred: #d75f5f;
+	--retro-hotpink3: #d75f87;
+	--retro-hotpink2: #d75faf;
+	--retro-orchid: #d75fd7;
+	--retro-mediumorchid1: #d75fff;
+	--retro-orange3: #d78700;
+	--retro-lightsalmon3: #d7875f;
+	--retro-lightpink3: #d78787;
+	--retro-pink3: #d787af;
+	--retro-plum3: #d787d7;
+	--retro-violet: #d787ff;
+	--retro-gold3: #d7af00;
+	--retro-lightgoldenrod3: #d7af5f;
+	--retro-tan: #d7af87;
+	--retro-mistyrose3: #d7afaf;
+	--retro-thistle3: #d7afd7;
+	--retro-plum2: #d7afff;
+	--retro-yellow3: #d7d700;
+	--retro-khaki3: #d7d75f;
+	--retro-lightgoldenrod2: #d7d787;
+	--retro-lightyellow3: #d7d7af;
+	--retro-grey84: #d7d7d7;
+	--retro-lightsteelblue1: #d7d7ff;
+	--retro-yellow2: #d7ff00;
+	--retro-darkolivegreen1: #d7ff5f;
+	--retro-darkolivegreen1: #d7ff87;
+	--retro-darkseagreen1: #d7ffaf;
+	--retro-honeydew2: #d7ffd7;
+	--retro-lightcyan1: #d7ffff;
+	--retro-red1: #ff0000;
+	--retro-deeppink2: #ff005f;
+	--retro-deeppink1: #ff0087;
+	--retro-deeppink1: #ff00af;
+	--retro-magenta2: #ff00d7;
+	--retro-magenta1: #ff00ff;
+	--retro-orangered1: #ff5f00;
+	--retro-indianred1: #ff5f5f;
+	--retro-indianred1: #ff5f87;
+	--retro-hotpink: #ff5faf;
+	--retro-hotpink: #ff5fd7;
+	--retro-mediumorchid1: #ff5fff;
+	--retro-darkorange: #ff8700;
+	--retro-salmon1: #ff875f;
+	--retro-lightcoral: #ff8787;
+	--retro-palevioletred1: #ff87af;
+	--retro-orchid2: #ff87d7;
+	--retro-orchid1: #ff87ff;
+	--retro-orange1: #ffaf00;
+	--retro-sandybrown: #ffaf5f;
+	--retro-lightsalmon1: #ffaf87;
+	--retro-lightpink1: #ffafaf;
+	--retro-pink1: #ffafd7;
+	--retro-plum1: #ffafff;
+	--retro-gold1: #ffd700;
+	--retro-lightgoldenrod2: #ffd75f;
+	--retro-lightgoldenrod2: #ffd787;
+	--retro-navajowhite1: #ffd7af;
+	--retro-mistyrose1: #ffd7d7;
+	--retro-thistle1: #ffd7ff;
+	--retro-yellow1: #ffff00;
+	--retro-lightgoldenrod1: #ffff5f;
+	--retro-khaki1: #ffff87;
+	--retro-wheat1: #ffffaf;
+	--retro-cornsilk1: #ffffd7;
+	--retro-grey100: #ffffff;
+	--retro-grey3: #080808;
+	--retro-grey7: #121212;
+	--retro-grey11: #1c1c1c;
+	--retro-grey15: #262626;
+	--retro-grey19: #303030;
+	--retro-grey23: #3a3a3a;
+	--retro-grey27: #444444;
+	--retro-grey30: #4e4e4e;
+	--retro-grey35: #585858;
+	--retro-grey39: #626262;
+	--retro-grey42: #6c6c6c;
+	--retro-grey46: #767676;
+	--retro-grey50: #808080;
+	--retro-grey54: #8a8a8a;
+	--retro-grey58: #949494;
+	--retro-grey62: #9e9e9e;
+	--retro-grey66: #a8a8a8;
+	--retro-grey70: #b2b2b2;
+	--retro-grey74: #bcbcbc;
+	--retro-grey78: #c6c6c6;
+	--retro-grey82: #d0d0d0;
+	--retro-grey85: #dadada;
+	--retro-grey89: #e4e4e4;
+	--retro-grey93: #eeeeee;
+}
+
+.text-shadow {
+	text-shadow: 2px 2px var(--retro-grey62);
+}
+
+.menu-link {
+	color: var(--retro-darkred);
+	text-decoration: none;
+}
+
+.menu-link:hover {
+	color: var(--retro-red1);
+}
+
+.menu-link-active {
+	color: var(--retro-blue3);
+	text-decoration: none;
+}
+
+.menu-link-active:hover {
+	color: var(--retro-cyan3);
+}
+
+.page-link, .page-link * {
+	text-decoration: none;
+	transition: all ease-in-out 0.1s;
+}
+
+.page-link:hover {
+	translate: -4px -4px;
+}
+
+.page-link-work {
+	background: var(--retro-red3);
+}
+
+.page-link-work:hover {
+	box-shadow: 4px 4px 0px 0px var(--retro-red3);
+}
+
+.page-link-fun {
+	background: var(--retro-green4);
+}
+
+.page-link-fun:hover {
+	box-shadow: 4px 4px 0px 0px var(--retro-green4);
+}
+
+.page-link-blog {
+	background: var(--retro-blue3);
+}
+
+.page-link-blog:hover {
+	box-shadow: 4px 4px 0px 0px var(--retro-blue3);
+}
